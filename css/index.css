@@ -1,0 +1,389 @@
+body,div,p,ul,li,h1,h2,h3,h4,h5,h6,input{
+	margin: 0;
+	padding: 0;
+	font: 12px simsun;
+	color: #000;
+}
+li{
+	list-style: none;
+}
+img,input{
+	border:0 none;
+}
+a{
+	text-decoration: none;
+	color:#000;
+}
+input{
+	outline-style: none;
+}
+.clearfix:after{
+	content: "";
+	display: block;
+	height: 0;
+	visibility: hidden; 
+	clear: both;
+}
+.clearfix{
+	zoom: 1;
+}
+/*顶部内容*/
+.top-nav{
+	height: 26px;
+	background: #f7f7f7;
+	border-bottom: 1px solid #d8d8d8;
+}
+.top-nav-con{
+	width: 970px;
+	margin: 0 auto;
+	height: 26px;
+}
+.top-c-l{
+	float: left;
+	height: 26px;
+	line-height: 26px;
+}
+.top-c-r{
+	float:right;
+}
+.top-c-r li{
+	float:left;
+	height: 26px;
+	line-height: 26px;
+}
+.top-c-r a{
+	display: inline-block;
+	height: 26px;
+	background: url(../img/sj.png)no-repeat right;
+	padding: 0 10px;
+}
+.logo{
+	width: 970px;
+	margin: 0 auto;
+	height: 84px;
+}
+.logo-pic{
+	width: 240px;
+	height: 84px;
+	float: left;
+}
+.search{
+	width: 520px;
+	height: 30px;
+	border: 1px solid #c9c9c9;
+	padding: 5px 5px;
+	float:right;
+	margin-top:28px;
+}
+.search input[type="text"]{
+	height: 28px;
+	width: 419px;
+	border: 1px solid #c9c9c9;
+	border-right: 0 none;
+	vertical-align: middle;
+}
+.search input[type="button"]{
+	height: 30px;
+	width: 99px;
+	background: url(../img/search.png);
+	vertical-align: middle;
+}
+.nav{
+	width: 970px;
+	height: 25px;
+
+	border-bottom: 2px solid #0266a3;
+	margin: 10px auto;
+}
+.nav li{
+	float: left;
+}
+.nav a{
+	height: 25px;
+	display: inline-block;
+	font: 500 14px/26px "宋体";
+	padding: 0 14px;
+	color:#0266a3;
+}
+.nav a:hover{
+	color: #F7F7F7;
+	background: #0266A3;
+}
+.banner{
+	width: 970px;
+	margin: 0 auto 10px;
+}
+.l-banner{
+	width: 200px;
+	height: 210px;
+	background: #ebf0f6;
+	float: left;
+	margin-right: 12px;
+}
+.l-banner-title{
+	height: 30px;
+	background: #0266a3;
+	color: #F7F7F7;
+	font-size: 16px;
+	line-height: 30px;
+	padding-left: 10px;
+}
+.l-banner ul{
+	margin-top: 5px;
+}
+.l-banner li{
+	height: 28px;
+	line-height: 28px;
+	font-size:16px;
+	padding-left: 40px;
+	
+}
+.l-banner li.con1{
+	background: url(../img/icon_1.png)no-repeat 10px;
+}
+.l-banner li.con2{
+	background: url(../img/icon_2.png)no-repeat 10px;
+}
+.l-banner li.con3{
+	background: url(../img/icon_3.png)no-repeat 10px;
+}
+.l-banner li.con4{
+	background: url(../img/icon_4.png)no-repeat 10px;
+}
+.l-banner li.con5{
+	background: url(../img/icon_5.png)no-repeat 10px;
+}
+.l-banner li.con6{
+	background: url(../img/icon_6.png)no-repeat 10px;
+}
+.l-banner a:hover{
+	color: blue;
+}
+.c-banner{
+	width: 520px;
+	height: 210px;
+	float: left;
+}	
+.r-banner{
+	float: right;
+	}
+.center-pic{
+	width: 229px;
+	height: 95px;
+	margin-bottom: 10px;
+	border-right: 1px solid #DFE6F0;
+}
+
+.buld-title{
+	width: 950px;
+	height: 34px;
+	margin: 0 auto 10px;
+	border-top:1px solid #c3d7e4;
+	background: #ecf1f7;
+	font: 16px/34px "微软雅黑";
+	color:#000000;
+	padding-left:20px;
+}
+.buld-main{
+	width: 970px;
+	margin: 0 auto 10px;
+}
+.buld-l{
+	width: 727px;
+	height: 344px;
+	border: 1px solid #d8d8d8;
+	float: left;
+}
+.buld-l-top{
+	width: 675px;
+	height: 143px;
+	margin: 15px 26px;
+}
+.buld-l-tl{
+	width: 100px;
+	height: 143px;
+	float: left;
+}
+.buld-pic1{
+	height:62px;
+	width: 91px;
+	border: 1px solid #cacaca;
+	padding: 18px 3px;
+	margin-bottom: 15px;
+}
+.buld-l-tr{
+	width: 220px;
+	height: 143px;
+	margin-left: 10px;
+	float: left;
+}
+.buld-l-tr p{
+	font-size: 14px;
+}
+.buld-l-tr p.txt{
+	height: 38px;
+	line-height: 38px;
+}
+.buld-l-tr p.txt1{
+	font-size: 12px;
+	height: 45px;
+	margin-left: 6px;
+	color: #863e01;
+}
+.buld-l-tr p.txt2{
+	height: 42px;
+}
+.buld-l-tr span{
+	font-weight: 700;
+	color: red;
+}
+.line{
+	height: 1px;
+	margin: 14px 5px;
+	background: #eee;
+}
+.buld-r{
+	height: 344px;
+	width: 228px;
+	border: 1px solid #D8D8D8;
+	float: right;
+}
+.buld-r-t{
+	margin-bottom: 10px;
+	height: 28px;
+	line-height: 28px;
+	text-indent: 10px;
+	border-bottom: 1px solid #D8D8D8;
+}
+.buld-r li{
+	height: 24px;
+	line-height: 24px;
+	padding-left: 24px;
+	background: url(../images/li_bg.png)no-repeat 10px;
+}
+.buld-r a:hover{
+	color:red;
+	text-decoration:underline;
+}
+.light{
+	margin: 14px 10px 10px;
+	height: 75px;
+	color: #999;
+}
+.light img{
+	float: left;
+	margin-right: 7px;
+}
+
+.chair-title{
+	width: 950px;
+	height: 34px;
+	margin: 0 auto 10px;
+	border-top:1px solid #c3d7e4;
+	background: #ecf1f7;
+	font: 16px/34px "微软雅黑";
+	color:#000000;
+	padding-left:20px;
+}
+.chair-main{
+	width: 970px;
+	margin: 0 auto 10px;
+}
+.chair-m-l{
+	width: 722px;
+	height: 326px;
+	float: left;
+}
+.chair-m-r{
+	float: right;
+	width: 222px;
+	height: 326px;
+}
+.chair-m-r img[src="images/et_right.png"]{
+	margin-bottom: 10px;
+	border: 1px solid #C9C9C9;
+}
+.chair-l-top{
+	height: 23px;
+	border-bottom: 2px solid #00b0e7;
+	line-height: 23px;
+	font-weight:bold ;
+	color: #5f94ca;
+	background: url(../images/et.png) no-repeat left;
+	text-align: right;
+}
+.chair-l-cp{
+	height: 301px;
+	border-bottom:1px solid #CACACA;
+	border-left:1px solid #CACACA;
+	border-right: 1px solid #CACACA;
+}
+.chair-cp-et{
+	width: 163px;
+	height: 284px;
+	margin: 5px 0 0 13px;
+	float: left;
+}
+.chair-cp-et p{
+	color: #999999;
+	text-align: center;
+}
+.chair-cp-et span{
+	color: #a10000;
+}
+.chair-cp-et p.et1{
+	height: 50px;
+	line-height: 22px;
+	color: #000000;
+	font-size: 14px;
+}
+.chair-cp-et p.et2{
+	height: 24px;
+}
+.chair-cp-et p.et3{
+	height: 24px;
+}
+.chair-cp-et p.et4{
+	font-size: 14px;
+}
+
+.flink{
+	border-top:1px solid #DDD;
+	border-bottom: 3px solid #097EC3;
+	height: 100px;
+	margin-top: 10px;
+	width: 970px;
+	margin: 0 auto;
+}
+.flink li{
+	float: left;
+	padding: 0 4px;
+	margin-bottom: 15px;
+}
+.flink-con{
+	margin-top:30px;
+}
+.txt-flink{
+	float: left;
+	height: 37px;
+}
+.flink a:hover{
+	color:red;
+	text-decoration: underline;
+} 
+.copyright{
+	text-align: center;
+}
+.copyright ul{
+	width: 690px;
+	margin: 0 auto;
+}
+.copyright li{
+	float: left;
+	padding: 0 10px;
+	border-right: 1px solid #ccc;
+	margin-top: 15px;
+}
+.copyright p{
+	margin: 10px 0;
+}

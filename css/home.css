@@ -1,0 +1,75 @@
+.nav {
+  margin: 0 0 20px;
+  height: 50px;
+  box-shadow: 0px -1px 7px #c9c9c9;
+}
+.nav > ul {
+  margin: 0 auto;
+  width: 1260px;
+}
+.nav li {
+  float: left;
+}
+.nav a {
+  display: block;
+  margin-left: 24px;
+  width: 114px;
+  font: 18px/50px "微软雅黑";
+  text-align: center;
+  box-sizing: border-box;
+}
+.nav a:hover,
+.active {
+  height: 50px;
+  text-decoration: none;
+  border-bottom: 2px solid#0084ff;
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  margin: 0 auto;
+  width: 1260px;
+}
+.box {
+  margin-right: 60px;
+  width: 900px;
+  border: 1px solid #dfdfdf;
+  box-shadow: 0px 2px 10px 1px #dae0e5;
+}
+.silder {
+  width: 300px;
+  background: yellow;
+}
+.books {
+  padding: 20px;
+  display: flex;
+}
+.books img {
+  height: 150px;
+  width: 180px;
+}
+.books-body {
+  position: relative;
+  margin-left: 20px;
+  border-bottom: 1px solid #dae0e5;
+  flex: 1;
+}
+.books-body_title {
+  margin-bottom: 10px;
+  font: 20px/40px "微软雅黑";
+}
+.books-body-cotent {
+  font-size: 14px;
+  color: #666;
+}
+.books-body .read {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: 1px solid #dae0e5;
+  color: blue;
+  background: #c2eeff;
+}
