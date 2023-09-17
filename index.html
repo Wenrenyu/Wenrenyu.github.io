@@ -48,29 +48,52 @@
 				{id: 20,img: "img/yb6.jpg",title: '约吧项目截图',describe: 'uni-app'},
 				{id: 20,img: "img/yb6.jpg",title: '约吧项目截图',describe: 'uni-app'},
 			]
-			let lbAlbum = document.querySelector('.lb-album');  
-			let fragment = document.createDocumentFragment();  
-  
-		function rendering(data) {  
- 		for (let i = 0; i < data.length; i++) {  
- 		let str = `  <li>  
-                 <a href="#image-${data[i].id}">  
-                 <img src="${data[i].img}" alt="${data[i].id}">  
-                 </a>  
-         <div class="lb-overlay" id="image-${data[i].id}">  
-         <a href="#page" class="lb-close">x</a>  
-         <img src="${data[i].img}" alt="${data[i].id}"/>  
-         <div>  
-         <h3 style="letter-spacing:2px">${data[i].title}</h3>  
-         <p>${data[i].describe}</p>  
-         </div>   
-         </div>  
-         </li>  
-         `;  
- fragment.innerHTML += str;  
- }  
- lbAlbum.appendChild(fragment);  
-}
+			let lbAlbum = document.querySelector('.lb-album');
+		let fragment = document.createDocumentFragment(); // 创建文档片段
+		
+		rendering(data);
+		
+		function rendering(data) {
+		  for (let i = 0; i < data.length; i++) {
+		    let li = document.createElement('li');
+		    let a = document.createElement('a');
+		    let img = document.createElement('img');
+		    let lbOverlay = document.createElement('div');
+		    let lbClose = document.createElement('a');
+		    let imgOverlay = document.createElement('img');
+		    let content = document.createElement('div');
+		    let h3 = document.createElement('h3');
+		    let p = document.createElement('p');
+		
+		    li.appendChild(a);
+		    a.appendChild(img);
+		    li.appendChild(lbOverlay);
+		    lbOverlay.appendChild(lbClose);
+		    lbOverlay.appendChild(imgOverlay);
+		    lbOverlay.appendChild(content);
+		    content.appendChild(h3);
+		    content.appendChild(p);
+		
+		    li.classList.add('lb-item');
+		    a.href = `#image-${data[i].id}`;
+		    img.src = data[i].img;
+		    img.alt = data[i].id;
+		    lbOverlay.classList.add('lb-overlay');
+		    lbOverlay.id = `image-${data[i].id}`;
+		    lbClose.classList.add('lb-close');
+		    lbClose.innerText = 'x';
+		    lbClose.href=`#page`
+		    imgOverlay.src = data[i].img;
+		    imgOverlay.alt = data[i].id;
+		    h3.style.letterSpacing = '2px';
+		    h3.innerText = data[i].title;
+		    p.innerText = data[i].describe;
+		
+		    fragment.appendChild(li); 
+		  }
+		
+		  lbAlbum.appendChild(fragment);
+		}
 		</script>
 	</body>
 </html>
