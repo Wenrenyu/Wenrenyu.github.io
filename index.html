@@ -48,29 +48,29 @@
 				{id: 20,img: "img/yb6.jpg",title: '约吧项目截图',describe: 'uni-app'},
 				{id: 20,img: "img/yb6.jpg",title: '约吧项目截图',describe: 'uni-app'},
 			]
-			let lbAlbum = document.querySelector('.lb-album')
-			rendering(data)
-					
-			function rendering(data) {
-				for (let i = 0; i < data.length; i++) {
-					let str = `
-					<li>
-						<a href="#image-${data[i].id}">
-							<img src="${data[i].img}" alt="${data[i].id}">
-						</a>
-						<div class="lb-overlay" id="image-${data[i].id}">
-							<a href="#page" class="lb-close">x</a>
-							<img src="${data[i].img}" alt="${data[i].id}"/>
-							<div>
-								<h3 style="letter-spacing:2px">${data[i].title}</h3>
-								<p>${data[i].describe}</p>
-							</div> 
-						</div>
-					</li>
-					`
-					lbAlbum.insertAdjacentHTML('beforeend', str);
-				}
-			}
+			let lbAlbum = document.querySelector('.lb-album');  
+			let fragment = document.createDocumentFragment();  
+  
+		function rendering(data) {  
+ 		for (let i = 0; i < data.length; i++) {  
+ 		let str = `  <li>  
+                 <a href="#image-${data[i].id}">  
+                 <img src="${data[i].img}" alt="${data[i].id}">  
+                 </a>  
+         <div class="lb-overlay" id="image-${data[i].id}">  
+         <a href="#page" class="lb-close">x</a>  
+         <img src="${data[i].img}" alt="${data[i].id}"/>  
+         <div>  
+         <h3 style="letter-spacing:2px">${data[i].title}</h3>  
+         <p>${data[i].describe}</p>  
+         </div>   
+         </div>  
+         </li>  
+         `;  
+ fragment.innerHTML += str;  
+ }  
+ lbAlbum.appendChild(fragment);  
+}
 		</script>
 	</body>
 </html>
