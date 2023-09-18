@@ -1,225 +1,143 @@
 html {
-				margin: 0;
-				min-height: 100%;
-			}
-		
-			body {
-				margin: 0;
-				height: 100%;
-				background: url(../img/bg1.jpg)no-repeat;
-				background-size: 100% 100%;
-				background-attachment: fixed;
-			}
-		
-			.lb-album {
-				width: 1080px;
-				margin: 0 auto;
-				padding-top: 20px;
-				font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
-			}
-		
-			.lb-album li {
-				list-style: none;
-				float: left;
-				margin: 5px;
-				position: relative;
-			}
-		
-			.lb-album li>a,
-			.lb-album li>a img {
-				height: 100%;
-				width: 100%;
-				display: block;
-			}
-		
-			.lb-album li>a {
-				width: 180px;
-				height: 180px;
-				position: relative;
-				padding: 8px;
-				margin: 10px 4px;
-				background: #fff;
-				box-shadow: 5px 7px 8px 1px rgba(219, 219, 219, 0.7), 1px 1px 2px rgba(219, 219, 219, 0.7);
-				border-radius: 6px;
-			}
-		
-			.lb-album li>a span {
-				position: absolute;
-				width: 150px;
-				height: 150px;
-				top: 10px;
-				left: 10px;
-				text-align: center;
-				line-height: 150px;
-				color: rgba(27, 54, 81, 0.8);
-				text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.6);
-				font-size: 24px;
-				opacity: 0;
-				filter: alpha(opacity=0);
-				/* internet explorer */
-				-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=0)";
-				/*IE8*/
-				background: rgb(241, 210, 194);
-				background: -moz-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.56) 0%, rgba(241, 210, 194, 1) 100%);
-				background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255, 255, 255, 0.56)), color-stop(100%, rgba(241, 210, 194, 1)));
-				background: -webkit-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.56) 0%, rgba(241, 210, 194, 1) 100%);
-				background: -o-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.56) 0%, rgba(241, 210, 194, 1) 100%);
-				background: -ms-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.56) 0%, rgba(241, 210, 194, 1) 100%);
-				background: radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.56) 0%, rgba(241, 210, 194, 1) 100%);
-		
-				transition: opacity 0.3s linear;
-			}
-		
-			.lb-overlay {
-				width: 0px;
-				height: 0px;
-				position: fixed;
-				overflow: hidden;
-				left: 0px;
-				top: 0px;
-				padding: 0px;
-				z-index: 99;
-				text-align: center;
-				background: rgb(66 100 123) 100%);
-				background: -moz-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.56) 0%, rgb(66 100 123) 100%);
-				;
-				background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255, 255, 255, 0.56)), color-stop(100%, rgba(66, 100, 123, 1)));
-				background: -webkit-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.56) 0%, rgb(66 100 123) 100%);
-				background: -o-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.56) 0%, rgb(66 100 123) 100%);
-				;
-				background: -ms-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.56) 0%, rgb(66 100 123) 100%);
-				;
-				background: radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.56) 0%, rgb(66 100 123) 100%);
-				;
-			}
-		
-			.lb-overlay a.lb-close {
-				background: rgba(27, 54, 81, 0.8);
-				z-index: 1001;
-				color: #fff;
-				position: absolute;
-				bottom: 20%;
-				left: 50%;
-				font-size: 20px;
-				line-height: 40px;
-				text-align: center;
-				width: 40px;
-				height: 40px;
-				overflow: hidden;
-				margin-left: -25px;
-				border-radius: 50%;
-				text-decoration: none;
-				opacity: 0;
-				filter: alpha(opacity=0);
-				/* internet explorer */
-				-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=0)";
-				/*IE8*/
-				-webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
-				-moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
-				box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
-				-webkit-transition: opacity 0.3s linear 1.2s;
-				-moz-transition: opacity 0.3s linear 1.2s;
-				-o-transition: opacity 0.3s linear 1.2s;
-				-ms-transition: opacity 0.3s linear 1.2s;
-				transition: opacity 0.3s linear 1.2s;
-			}
-			.lb-overlay h3{
-				text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
-			}
-			.lb-overlay>div p{
-				text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
-			}
-			.lb-overlay img {
-				/* height: 100%; For Opera max-height does not seem to work */
-				width: 70vw;
-				height: 70vh;
-				position: relative;
-				-webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
-				-moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
-				box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.2);
-			}
-		
-			.lb-overlay:target {
-				width: auto;
-				height: auto;
-				bottom: 0px;
-				right: 0px;
-				padding: 80px 100px 120px 100px;
-			}
-		
-			.lb-overlay:target img {
-				-webkit-animation: fadeInScale 1.2s ease-in-out;
-				-moz-animation: fadeInScale 1.2s ease-in-out;
-				-o-animation: fadeInScale 1.2s ease-in-out;
-				-ms-animation: fadeInScale 1.2s ease-in-out;
-				animation: fadeInScale 1.2s ease-in-out;
-			}
-		
-			.lb-overlay:target a.lb-close,
-			.lb-overlay:target>div {
-				opacity: 1;
-				filter: alpha(opacity=99);
-				/* internet explorer */
-				-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=99)";
-				/*IE8*/
-			}
-		
-			@-webkit-keyframes fadeInScale {
-				0% {
-					-webkit-transform: scale(0.6);
-					opacity: 0;
-				}
-		
-				100% {
-					-webkit-transform: scale(1);
-					opacity: 1;
-				}
-			}
-		
-			@-moz-keyframes fadeInScale {
-				0% {
-					-moz-transform: scale(0.6);
-					opacity: 0;
-				}
-		
-				100% {
-					-moz-transform: scale(1);
-					opacity: 1;
-				}
-			}
-		
-			@-o-keyframes fadeInScale {
-				0% {
-					-o-transform: scale(0.6);
-					opacity: 0;
-				}
-		
-				100% {
-					-o-transform: scale(1);
-					opacity: 1;
-				}
-			}
-		
-			@-ms-keyframes fadeInScale {
-				0% {
-					-ms-transform: scale(0.6);
-					opacity: 0;
-				}
-		
-				100% {
-					-ms-transform: scale(1);
-					opacity: 1;
-				}
-			}
-		
-			@keyframes fadeInScale {
-				0% {
-					transform: scale(0.6);
-					opacity: 0;
-				}
-		
-				100% {
-					transform: scale(1);
-					opacity: 1;
-				}
-			}
+	margin: 0;
+	min-height: 100%;
+}
+
+body {
+	margin: 0;
+	height: 100%;
+	background: url(../img/bg1.jpg)no-repeat;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+
+.lb-album {
+	width: 1080px;
+	margin: 0 auto;
+	padding-top: 20px;
+	font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+}
+
+#myImg {
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+#myImg:hover {
+	opacity: 0.7;
+}
+
+/* The Modal (background) */
+.modal {
+	display: none;
+	/* Hidden by default */
+	position: fixed;
+	/* Stay in place */
+	z-index: 1;
+	/* Sit on top */
+	padding-top: 40px;
+	/* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%;
+	/* Full width */
+	height: 100%;
+	/* Full height */
+	overflow: auto;
+	/* Enable scroll if needed */
+	background: rgb(66 100 123) 100%);
+	background: -moz-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.56) 0%, rgb(66 100 123) 100%);
+	;
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255, 255, 255, 0.56)), color-stop(100%, rgba(66, 100, 123, 1)));
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.56) 0%, rgb(66 100 123) 100%);
+	background: -o-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.56) 0%, rgb(66 100 123) 100%);
+	;
+	background: -ms-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.56) 0%, rgb(66 100 123) 100%);
+	;
+	background: radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.56) 0%, rgb(66 100 123) 100%);
+	;
+}
+
+.modal-content {
+	margin: 0 auto;
+	display: block;
+	width: 70vw;
+	height: 74vh;
+	//max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+	margin: auto;
+	padding-top: 10px;
+	width: 50vw;
+	//max-width: 700px;
+	letter-spacing: 6px;
+	font-size: 20px;
+	font-weight: 700;
+	text-align: center;
+	text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+}
+
+#caption p {
+	margin: 6px 4px;
+}
+
+/* Add Animation */
+.modal-content,
+#caption {
+	-webkit-animation-name: zoom;
+	-webkit-animation-duration: 0.6s;
+	animation-name: zoom;
+	animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+	from {
+		-webkit-transform: scale(0)
+	}
+
+	to {
+		-webkit-transform: scale(1)
+	}
+}
+
+@keyframes zoom {
+	from {
+		transform: scale(0)
+	}
+
+	to {
+		transform: scale(1)
+	}
+}
+
+/* The Close Button */
+.close {
+	position: absolute;
+	top: 15px;
+	right: 35px;
+	color: #f1f1f1;
+	font-size: 40px;
+	font-weight: bold;
+	transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+	color: #bbb;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.lb-album li {
+	list-style: none;
+	float: left;
+	padding: 8px;
+	margin: 10px 8px;
+	background: #fff;
+	box-shadow: 5px 7px 8px 1px rgba(219, 219, 219, 0.7), 1px 1px 2px rgba(219, 219, 219, 0.7);
+	border-radius: 6px;
+	position: relative;
+}
